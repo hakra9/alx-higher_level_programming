@@ -1,0 +1,1 @@
+In this repository, we explore various aspects of higher-level programming. This term typically refers to programming languages and paradigms that provide a higher level of abstraction from machine-level instructions, making it easier to write complex software.
