@@ -69,5 +69,6 @@ class Rectangle(Base):
     
     def display(self):
         '''Prints string representation.'''
-        s = '\n' * self.y + (' ' * self.x + '#' * self.width + '\n') * self.height
+        s = '\n' * self.y + \
+        (' ' * self.x + '#' * self.width + '\n') * self.height
         print(s, end='')
