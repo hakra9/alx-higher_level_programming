@@ -5,7 +5,7 @@ import csv
 
 
 class Base:
-    '''A reprsentation of th base. '''
+    '''A representation of the base of our OOP hierarchy.'''
 
     __nb_objects = 0
 
@@ -18,7 +18,7 @@ class Base:
             self.id = Base.__nb_objects
 
     @staticmethod
-    def to_json_string(list_dictionaries):i
+    def to_json_string(list_dictionaries):
         '''Jsonifies a dictionary so it's quite rightly and longer.'''
         if list_dictionaries is None or not list_dictionaries:
             return "[]"
