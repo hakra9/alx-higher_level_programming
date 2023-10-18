@@ -14,7 +14,7 @@ class Square(Rectangle):
         '''Returns string info.'''
         return '[{}] ({}) {}/{} - {}'.\
             format(type(self).__name__, self.id, self.x, self.y, self.width)
-    
+
     @property
     def size(self):
         '''Size of this square.'''
@@ -42,3 +42,8 @@ class Square(Rectangle):
             self.__update(*args)
         elif kwargs:
             self.__update(**kwargs)
+
+    def to_dictionary(self):
+        '''Returns dictionary representation of this class.'''
+        return {"id": self.id, "width": self.__width, "height": self.__height,
+                "x": self.x, "y": self.y}
